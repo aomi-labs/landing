@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scroll reveal animations */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.scroll-reveal.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation for multiple elements */
+.scroll-reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+
+/* Slide in from right animations */
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.8s ease-out;
+}
+
+.slide-in-right.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered slide-in delays */
+.slide-in-right-delay-1 {
+  transition-delay: 0.1s;
+}
+
+.slide-in-right-delay-2 {
+  transition-delay: 0.25s;
+}
+
+.slide-in-right-delay-3 {
+  transition-delay: 0.4s;
+}
+
+.slide-in-right-delay-4 {
+  transition-delay: 0.55s;
+}
+
+/* Blog page styles */
+.gradient-bg {
+  position: relative;
+}
+
+.gradient-bg::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/images/blured.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(60px);
+  z-index: -10;
+}
+
+.font-bauhaus {
+  font-family: 'Bauhaus_Chez_Display_2.0', 'Arial Black', sans-serif;
+}
+
+.record-image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out;
+}
+
+/* Additional font styles for blog page */
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
