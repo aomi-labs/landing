@@ -28,7 +28,7 @@ function getLandingPageHTML() {
     <div class="w-full min-h-screen px-10 pb-5 relative bg-white flex flex-col justify-start items-center overflow-hidden">
       <div data-breakpoint="Desktop" class="self-stretch flex flex-col justify-start items-center">
         <div class="w-full h-36 max-w-[1500px] pt-5 pb-20 inline-flex justify-between items-center">
-          <img src="./assets/images/aomi-logo.svg" alt="Aomi" class="h-15 w-auto" />
+          <img src="/assets/images/aomi-logo.svg" alt="Aomi" class="h-15 w-auto" />
           <a href="https://github.com/aomi-labs" target="_blank" rel="noopener noreferrer" data-state="Default" class="px-5 py-3.5 bg-fuchsia-700 rounded-full flex justify-center items-center gap-0.5 hover:bg-fuchsia-800 transition-colors">
             <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Github ↗</div>
           </a>
@@ -38,7 +38,7 @@ function getLandingPageHTML() {
         <div class="scroll-reveal scroll-reveal-delay-1 self-stretch text-center justify-start text-black text-[160px] font-black font-['Bauhaus_Chez_Display_2.0'] leading-[136px] mt-7">UX reinvention.</div>
         <div data-breakpoint="Desktop" class="scroll-reveal scroll-reveal-delay-2 self-stretch h-96 relative bg-gradient-to-l from-blue-400/50 to-fuchsia-700/50 rounded-[30px]">
           <div class="w-[927px] h-[644px] left-1/2 -translate-x-1/2 top-[-141px] absolute bg-black rounded-3xl shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.10)] border-l-2 border-r-2 border-t-2 border-white/50 overflow-hidden">
-            <img class="w-[889.74px] h-[505.44px] left-[18.63px] top-[18.50px] absolute rounded-2xl" src="./assets/images/kk-1.png" />
+            <img class="w-[889.74px] h-[505.44px] left-[18.63px] top-[18.50px] absolute rounded-2xl" src="/assets/images/kk-1.png" />
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@ function getLandingPageHTML() {
             <div class="scroll-reveal scroll-reveal-delay-3 self-stretch px-11 pt-10 inline-flex justify-start items-start gap-5 flex-wrap content-start">
               <div class="slide-in-right slide-in-right-delay-1 flex-1 min-w-64 pr-5 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
                 <div class="w-6 h-6 relative overflow-hidden">
-                  <img class="w-6 h-6 object-contain" src="./assets/images/chart_icon.png" alt="Generalization" />
+                  <img class="w-6 h-6 object-contain" src="/assets/images/chart_icon.png" alt="Generalization" />
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Generalization</div>
@@ -61,7 +61,7 @@ function getLandingPageHTML() {
               </div>
               <div class="slide-in-right slide-in-right-delay-2 flex-1 min-w-64 pr-5 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-5">
                 <div class="w-6 h-6 relative overflow-hidden">
-                  <img class="w-6 h-6 object-contain" src="./assets/images/earth_icon.png" alt="Scalability" />
+                  <img class="w-6 h-6 object-contain" src="/assets/images/earth_icon.png" alt="Scalability" />
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Scalability</div>
@@ -70,7 +70,7 @@ function getLandingPageHTML() {
               </div>
               <div class="slide-in-right slide-in-right-delay-3 flex-1 min-w-64 pr-10 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
                 <div class="w-6 h-6 relative overflow-hidden">
-                  <img class="w-6 h-6 object-contain" src="./assets/images/account_icon.png" alt="Security" />
+                  <img class="w-6 h-6 object-contain" src="/assets/images/account_icon.png" alt="Security" />
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Security</div>
@@ -79,7 +79,7 @@ function getLandingPageHTML() {
               </div>
               <div class="slide-in-right slide-in-right-delay-4 flex-1 min-w-64 pr-10 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
                 <div class="w-6 h-6 relative overflow-hidden">
-                  <img class="w-6 h-6 object-contain" src="./assets/images/cable_icon.png" alt="Performance" />
+                  <img class="w-6 h-6 object-contain" src="/assets/images/cable_icon.png" alt="Performance" />
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Performance</div>
@@ -88,7 +88,7 @@ function getLandingPageHTML() {
               </div>
             </div>
           </div>
-          <img class="scroll-reveal scroll-reveal-delay-1 w-[1200px] h-[620px] relative rounded-[30px] object-cover mx-auto" src="./assets/images/kk-2.png" />
+          <img class="scroll-reveal scroll-reveal-delay-1 w-[1200px] h-[620px] relative rounded-[30px] object-cover mx-auto" src="/assets/images/kk-2.png" />
         </div>
         <div class="w-full max-w-[1500px] pb-28 inline-flex justify-start items-start gap-5">
           <div class="flex-1 pt-14 pb-20 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-10">
@@ -118,7 +118,7 @@ function getLandingPageHTML() {
           </div>
           <div class="slide-in-right slide-in-right-delay-4 w-[519px] max-w-[1600px] inline-flex flex-col justify-start items-end">
             <div class="w-[519px] h-[620px] overflow-hidden rounded-[30px]">
-              <img class="w-full h-full object-cover" src="./assets/images/kk-3.jpg" />
+              <img class="w-full h-full object-cover" src="/assets/images/kk-3.jpg" />
             </div>
           </div>
         </div>
@@ -245,7 +245,7 @@ function getLandingPageHTML() {
         </div>
         <div class="scroll-reveal scroll-reveal-delay-1 self-stretch pb-10 flex flex-col justify-start items-center gap-2.5">
           <div class="w-full h-[664.29px] max-w-[1500px] max-h-[830.36px] rounded-[30px] inline-flex justify-center items-center gap-2.5 overflow-hidden">
-            <img class="w-[1200px] h-[664px] object-cover rounded-[30px]" src="./assets/images/kk-4.png" />
+            <img class="w-[1200px] h-[664px] object-cover rounded-[30px]" src="/assets/images/kk-4.png" />
           </div>
         </div>
         <div class="w-full max-w-[1500px] px-72 py-28 border-t-[0.50px] border-gray-200 flex flex-col justify-start items-center gap-10">
@@ -258,7 +258,7 @@ function getLandingPageHTML() {
       </div>
       <div class="w-full max-w-[1500px] pt-10 pb-5 border-t border-gray-200 flex flex-col justify-end items-start gap-20">
         <div class="self-stretch inline-flex justify-start items-end gap-10">
-          <img src="./assets/images/a.svg" alt="A" class="w-24 h-10 object-contain" />
+          <img src="/assets/images/a.svg" alt="A" class="w-24 h-10 object-contain" />
           <div class="flex-1 h-4"></div>
           <div class="justify-center text-lime-800 text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">All Rights Reserved</div>
         </div>
@@ -281,7 +281,7 @@ function getBlogPageHTML() {
           <div class="w-[1200px] max-w-[1500px] px-16 pt-7 pb-56 inline-flex justify-between items-start">
             <div class="flex justify-start items-start">
               <button onclick="navigateToHome()" class="cursor-pointer">
-                <img src="./assets/images/aomi-logo.svg" alt="Aomi Labs" class="h-10" />
+                <img src="/assets/images/aomi-logo.svg" alt="Aomi Labs" class="h-10" />
               </button>
             </div>
             <div class="flex justify-start items-center gap-5 flex-wrap content-center">
@@ -303,7 +303,7 @@ function getBlogPageHTML() {
             <div class="w-full max-w-[1500px] px-24 pt-12 border-t-[0.50px] border-stone-300 inline-flex justify-center items-start gap-12">
               <div class="flex-1 px-2.5 pt-7 pb-10 rounded-full flex justify-center items-center gap-2.5">
                 <div class="relative w-[408px] h-[408px] flex-shrink-0">
-                  <img id="record-image" class="record-image shadow-[0px_3.1289148330688477px_3.1289148330688477px_0px_rgba(0,0,0,0.25)] border-8 border-white rounded-full transition-transform duration-100" src="./assets/images/main-image.jpg" alt="Aomi Thoughts" />
+                  <img id="record-image" class="record-image shadow-[0px_3.1289148330688477px_3.1289148330688477px_0px_rgba(0,0,0,0.25)] border-8 border-white rounded-full transition-transform duration-100" src="/assets/images/main-image.jpg" alt="Aomi Thoughts" />
                   <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full border-2 border-gray-300"></div>
                 </div>
               </div>
@@ -331,22 +331,22 @@ function getBlogPageHTML() {
               <div class="justify-start text-zinc-800 text-base font-normal font-['Source_Code_Pro'] uppercase leading-tight">Moments</div>
               <div class="self-stretch inline-flex justify-start items-start gap-5 flex-wrap content-start">
                 <div class="flex-1 h-80 min-w-60 py-7 inline-flex flex-col justify-center items-center gap-4">
-                  <img class="w-52 h-52 object-cover rounded" src="./assets/images/neon-retrieve.jpg" alt="Neon Reverie" />
+                  <img class="w-52 h-52 object-cover rounded" src="/assets/images/neon-retrieve.jpg" alt="Neon Reverie" />
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none">Neon Reverie</div>
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none"> ↗</div>
                 </div>
                 <div class="flex-1 h-80 min-w-60 py-7 inline-flex flex-col justify-center items-center gap-4">
-                  <img class="w-52 h-52 object-cover rounded" src="./assets/images/summer-went-missing.jpg" alt="Summer Went Missing" />
+                  <img class="w-52 h-52 object-cover rounded" src="/assets/images/summer-went-missing.jpg" alt="Summer Went Missing" />
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none">Summer Went Missing</div>
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none"> ↗</div>
                 </div>
                 <div class="flex-1 h-80 min-w-60 py-7 inline-flex flex-col justify-center items-center gap-4">
-                  <img class="w-52 h-52 object-cover rounded" src="./assets/images/inkwell-shadow.jpg" alt="Inkwell Shadows" />
+                  <img class="w-52 h-52 object-cover rounded" src="/assets/images/inkwell-shadow.jpg" alt="Inkwell Shadows" />
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none">Inkwell Shadows</div>
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none"> ↗</div>
                 </div>
                 <div class="flex-1 h-80 min-w-60 py-7 inline-flex flex-col justify-center items-center gap-4">
-                  <img class="w-52 h-52 object-cover rounded" src="./assets/images/golden-hour-hosts.jpg" alt="Golden Hour Ghosts" />
+                  <img class="w-52 h-52 object-cover rounded" src="/assets/images/golden-hour-hosts.jpg" alt="Golden Hour Ghosts" />
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none">Golden Hour Ghosts</div>
                   <div class="justify-start text-zinc-800 text-sm font-normal font-['Source_Code_Pro'] leading-none"> ↗</div>
                 </div>
@@ -361,7 +361,7 @@ function getBlogPageHTML() {
           </div>
           <div class="w-full max-w-[1500px] px-24 pt-24 pb-20 inline-flex justify-start items-start gap-14">
             <div class="flex-1 pt-20 border-t border-stone-300 flex justify-center items-center gap-20">
-              <img src="./assets/images/aomi-logo.svg" alt="Aomi Labs" class="h-10" />
+              <img src="/assets/images/aomi-logo.svg" alt="Aomi Labs" class="h-10" />
               <div class="flex-1 h-7 relative">
                 <div class="w-56 left-[666.96px] top-[7px] absolute text-right justify-start text-neutral-600 text-xs font-normal font-['Source_Code_Pro'] leading-none">Rights:<br/>All rights reserved</div>
               </div>
