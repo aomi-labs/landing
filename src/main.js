@@ -47,7 +47,7 @@ function getLandingPageHTML() {
           <div class="self-stretch pt-20 pb-14 border-t-[0.50px] border-gray-200 flex flex-col justify-start items-start gap-12">
             <div class="self-stretch flex flex-col justify-start items-center gap-12">
               <div id="about" class="scroll-reveal scroll-reveal-delay-1 self-stretch text-center text-black text-6xl font-bold font-['Bauhaus_Chez_Display_2.0'] leading-[54px]">Consumer Crypto on Natural Language</div>
-              <div class="scroll-reveal scroll-reveal-delay-2 self-stretch text-center text-neutral-500 text-base font-sm font-['DotGothic16'] tracking-wide">All blockchains are interoperable ledgers processing generic actions against their states. You should be able to talk to blockchains without intermediaries, skipping the frontends or protocol-defined SDKs. Aomi eliminates bespoke integrations between AI frameworks and on-chain apps, allowing Claude/ChatGPT talks to a high-performance clients directly via Model-Context Protocol.</div>
+              <div class="scroll-reveal scroll-reveal-delay-2 self-stretch text-center text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">All blockchains are interoperable ledgers processing generic actions against their states. You should be able to talk to blockchains without intermediaries, skipping the frontends or protocol-defined SDKs. Aomi eliminates bespoke integrations between AI frameworks and on-chain apps, allowing Claude/ChatGPT talks to a high-performance clients directly via Model-Context Protocol.</div>
             </div>
             <div class="scroll-reveal scroll-reveal-delay-3 self-stretch px-11 pt-10 inline-flex justify-start items-start gap-5 flex-wrap content-start">
               <div class="slide-in-right slide-in-right-delay-1 flex-1 min-w-64 pr-5 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
@@ -56,7 +56,7 @@ function getLandingPageHTML() {
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Generalization</div>
-                  <div class="self-stretch justify-start text-neutral-500 text-base font-sm font-['DotGothic16'] tracking-wide">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</div>
+                  <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Unlock data-driven decisions with comprehensive analytics, revealing key opportunities for strategic regional growth.</div>
                 </div>
               </div>
               <div class="slide-in-right slide-in-right-delay-2 flex-1 min-w-64 pr-5 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-5">
@@ -65,7 +65,7 @@ function getLandingPageHTML() {
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Scalability</div>
-                  <div class="self-stretch justify-start text-neutral-500 font-sm font-['DotGothic16'] tracking-wide">Model-Context Protocol turns MxN adaption into one-off integration, saving millions of costs for AI frameworks and applications.</div>
+                  <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Model-Context Protocol turns MxN adaption into one-off integration, saving millions of costs for AI frameworks and applications.</div>
                 </div>
               </div>
               <div class="slide-in-right slide-in-right-delay-3 flex-1 min-w-64 pr-10 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
@@ -74,7 +74,7 @@ function getLandingPageHTML() {
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Security</div>
-                  <div class="self-stretch justify-start text-neutral-500 font-sm font-['DotGothic16'] tracking-wide">Type-safe transaction crafting with audited contract artifacts, plus agentic safeguard with server-side simulation against blockchain states.</div>
+                  <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Type-safe transaction crafting with audited contract artifacts, plus agentic safeguard with server-side simulation against blockchain states.</div>
                 </div>
               </div>
               <div class="slide-in-right slide-in-right-delay-4 flex-1 min-w-64 pr-10 py-10 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-6">
@@ -83,7 +83,7 @@ function getLandingPageHTML() {
                 </div>
                 <div class="self-stretch flex flex-col justify-start items-start gap-5">
                   <div class="self-stretch justify-start text-black text-lg font-normal font-['Bauhaus_Chez_Display_2.0'] leading-none">Performance</div>
-                  <div class="self-stretch justify-start text-neutral-500 font-sm font-['DotGothic16'] tracking-wide">Node-based implementation on robust light clients, indexers, and dev-tools, leveraging Anthropic MCP SDKs in Rust/Go.</div>
+                  <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Node-based implementation on robust light clients, indexers, and dev-tools, leveraging Anthropic MCP SDKs in Rust/Go.</div>
                 </div>
               </div>
             </div>
