@@ -114,7 +114,7 @@ function getLandingPageHTML() {
           <div class="flex-1 pt-14 pb-20 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-10">
             <div class="self-stretch px-11 flex flex-col justify-start items-start gap-10">
               <div id="mission" class="slide-in-right slide-in-right-delay-1 w-[503.13px] justify-start text-black text-4xl font-normal font-['Bauhaus_Chez_Display_2.0'] leading-10">"Put $100 in a pool with the best yield."</div>
-              <div class="slide-in-right slide-in-right-delay-1 self-stretch justify-start text-neutral-500 font-normal font-['DotGothic16'] tracking-wide">How do AI achieve this if the pool is unknown to the framework?</div>
+              <div class="slide-in-right slide-in-right-delay-1 self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">How do AI achieve this if the pool is unknown to the framework?</div>
             </div>
             <div class="self-stretch flex flex-col justify-start items-start">
               <div class="slide-in-right slide-in-right-delay-2 self-stretch px-11 pr-2.5 py-5 border-t border-gray-200 inline-flex justify-center items-start gap-7">
@@ -134,7 +134,7 @@ function getLandingPageHTML() {
                 <div class="flex-1 pr-10 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight mt-1">Execute: previous context is trimmed and fed into LLM. Agent generates scripts that fulfill user intent. Simulates the scripts for security and land the transactions.</div>
               </div>
             </div>
-            <div class="slide-in-right slide-in-right-delay-4 self-stretch px-11 justify-start text-neutral-500 font-normal font-['DotGothic16'] tracking-wide">Think of Manus ↗ or OpenAI's Agent mode ↗ for on-chain tasks.</div>
+            <div class="slide-in-right slide-in-right-delay-4 self-stretch px-11 justify-start text-neutral-500 font-normal text-sm font-['DotGothic16'] tracking-wide">Think of Manus ↗ or OpenAI's Agent mode ↗ for on-chain tasks.</div>
           </div>
           <div class="slide-in-right slide-in-right-delay-4 w-[519px] max-w-[1600px] inline-flex flex-col justify-start items-end">
             <div class="w-[519px] h-[620px] overflow-hidden rounded-[30px]">
@@ -163,25 +163,25 @@ function getLandingPageHTML() {
               </div>
               <div class="self-stretch px-7 py-8 border-b-[0.50px] border-gray-200 inline-flex justify-start items-center gap-2">
                 <div class="w-3.5 h-3.5 relative overflow-hidden">
-                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-fuchsia-700"></div>
+                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-neutral-500"></div>
                 </div>
                 <div class="flex-1 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Any contracts on supported chains</div>
               </div>
               <div class="self-stretch px-7 py-8 border-b-[0.50px] border-gray-200 inline-flex justify-start items-center gap-2">
                 <div class="w-3.5 h-3.5 relative overflow-hidden">
-                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-fuchsia-700"></div>
+                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-neutral-500"></div>
                 </div>
                 <div class="flex-1 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Zero bespoke integration</div>
               </div>
               <div class="self-stretch px-7 py-8 border-b-[0.50px] border-gray-200 inline-flex justify-start items-center gap-2">
                 <div class="w-3.5 h-3.5 relative overflow-hidden">
-                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-fuchsia-700"></div>
+                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-neutral-500"></div>
                 </div>
                 <div class="flex-1 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Context, states, prompt engineering</div>
               </div>
               <div class="self-stretch px-7 py-8 border-b-[0.50px] border-gray-200 inline-flex justify-start items-center gap-2">
                 <div class="w-3.5 h-3.5 relative overflow-hidden">
-                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-fuchsia-700"></div>
+                  <div class="w-2.5 h-2 left-[2.04px] top-[3.26px] absolute bg-neutral-500"></div>
                 </div>
                 <div class="flex-1 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Custom-built framework for performance</div>
               </div>
@@ -234,10 +234,10 @@ function getLandingPageHTML() {
               <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-fuchsia-700">Capability</h3>
               <p class="text-sm font-normal font-['DotGothic16'] text-neutral-500 mb-4">Breadth of on-chain tasks AI can perform arbitrarily securely</p>
               <ul class="space-y-3">
-                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Any contracts on supported chains</span></li>
-                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Zero bespoke integration</span></li>
-                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Context, states, prompt engineering</span></li>
-                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Custom-built framework for performance</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Any contracts on supported chains</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Zero bespoke integration</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Context, states, prompt engineering</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Custom-built framework for performance</span></li>
               </ul>
             </div>
             
@@ -262,13 +262,13 @@ function getLandingPageHTML() {
         </div>
         <div id="blog" class="w-full max-w-[1500px] pt-20 pb-28 border-t border-gray-200 flex flex-col justify-start items-start gap-20">
           <div class="self-stretch inline-flex justify-between items-start">
-            <div class="scroll-reveal scroll-reveal-delay-1 text-center pl-10 justify-start text-black text-6xl font-semibold font-['Bauhaus_Chez_Display_2.0'] leading-[54px]">Hear our thoughts</div>
+            <div class="scroll-reveal scroll-reveal-delay-1 text-center justify-start text-black text-6xl font-semibold font-['Bauhaus_Chez_Display_2.0'] leading-[54px]">Hear our thoughts</div>
             <button onclick="navigateToBlog()" data-type="Primary" class="scroll-reveal scroll-reveal-delay-2 px-5 py-3.5 bg-fuchsia-700 rounded-full inline-flex flex-col justify-center items-center gap-2.5 hover:bg-fuchsia-800 transition-colors">
               <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Blog ↗</div>
             </button>
           </div>
           <div class="scroll-reveal scroll-reveal-delay-3 self-stretch inline-flex justify-center items-start gap-5 blog-columns flex-col md:flex-row">
-            <div class="flex-1 pl-10 min-w-60 pr-7 pt-14 pb-5 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-14">
+            <div class="flex-1 min-w-60 pr-7 pt-14 pb-5 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-14">
               <div class="self-stretch justify-start text-neutral-500 text-7xl font-normal font-['DM_Sans'] leading-[80px]">01</div>
               <div class="self-stretch pl-5 flex flex-col justify-start items-start gap-5">
                 <div class="self-stretch justify-start text-black text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">States</div>
