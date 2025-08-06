@@ -25,9 +25,29 @@ function showBlogPage() {
 
 function getLandingPageHTML() {
   return `
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="hamburger-menu md:hidden">
+      <a href="#about" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">About</a>
+      <a href="#mission" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Mission</a>
+      <a href="#blog" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Blog</a>
+      <a href="#contact" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Contact</a>
+      <a href="https://github.com/aomi-labs" target="_blank" rel="noopener noreferrer" class="px-6 py-4 bg-fuchsia-700 rounded-full text-white text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:bg-fuchsia-800 transition-colors">Github ↗</a>
+    </div>
+    
     <div class="w-full min-h-screen px-10 pb-5 relative bg-white flex flex-col justify-start items-center overflow-hidden">
       <div data-breakpoint="Desktop" class="self-stretch flex flex-col justify-start items-center">
-        <div class="w-full h-36 max-w-[1500px] pt-5 pb-20 inline-flex justify-between items-center">
+        <!-- Mobile Header -->
+        <div class="mobile-nav w-full h-20 max-w-[1500px] pt-5 pb-8 flex justify-between items-center md:hidden">
+          <img src="/assets/images/aomi-logo.svg" alt="Aomi" class="h-8 w-auto" />
+          <div class="hamburger-icon" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <!-- Desktop Header -->
+        <div class="desktop-nav w-full h-36 max-w-[1500px] pt-5 pb-20 hidden md:inline-flex justify-between items-center">
           <img src="/assets/images/aomi-logo.svg" alt="Aomi" class="h-15 w-auto" />
           <a href="https://github.com/aomi-labs" target="_blank" rel="noopener noreferrer" data-state="Default" class="px-5 py-3.5 bg-fuchsia-700 rounded-full flex justify-center items-center gap-0.5 hover:bg-fuchsia-800 transition-colors">
             <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Github ↗</div>
@@ -126,13 +146,14 @@ function getLandingPageHTML() {
           <div class="self-stretch px-60 py-20 border-t border-blue-100 flex flex-col justify-start items-center gap-10">
             <div class="self-stretch flex flex-col justify-start items-center gap-10">
               <div class="scroll-reveal scroll-reveal-delay-1 self-stretch text-center justify-start text-black text-6xl font-bold font-['Bauhaus_Chez_Display_2.0'] leading-[54px]">Service Model for Order Flow</div>
-              <div class="scroll-reveal scroll-reveal-delay-2 self-stretch text-center justify-start text-neutral-500 font-normal font-['DotGothic16'] tracking-wide">In the coming years, 50%+ of transaction flows will have AI in the loop. Businesses with product-market fit will saturate the block-building pipeline, either as middleware or direct-to-consumer distribution.</div>
+              <div class="scroll-reveal scroll-reveal-delay-2 self-stretch text-center justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">In the coming years, 50%+ of transaction flows will have AI in the loop. Businesses with product-market fit will saturate the block-building pipeline, either as middleware or direct-to-consumer distribution.</div>
               <a href="https://orderflow.art/?isOrderflow=true" target="_blank" rel="noopener noreferrer" data-type="Primary" class="scroll-reveal scroll-reveal-delay-3 px-5 py-3.5 bg-fuchsia-700 rounded-full flex flex-col justify-center items-center gap-2.5 hover:bg-fuchsia-800 transition-colors">
                 <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Discover More</div>
               </a>
             </div>
           </div>
-          <div class="scroll-reveal scroll-reveal-delay-1 self-stretch rounded-[20px] inline-flex justify-start items-stretch overflow-hidden">
+          <!-- Desktop Table Layout -->
+          <div class="scroll-reveal scroll-reveal-delay-1 self-stretch rounded-[20px] inline-flex justify-start items-stretch overflow-hidden comparison-table hidden md:flex">
             <div class="slide-in-right slide-in-right-delay-1 w-1/3 bg-white rounded-[20px] shadow-[0px_2px_8px_0px_rgba(0,0,0,0.08)] outline outline-1 outline-offset-[-1px] outline-gray-200 inline-flex flex-col justify-start items-start overflow-hidden">
               <div class="self-stretch h-24 px-7 py-10 border-b border-blue-100 inline-flex justify-center items-start gap-4">
                 <div class="justify-center text-neutral-500 text-2xl font-medium font-['Bauhaus_Chez_Display_2.0'] leading-7">Capability</div>
@@ -206,6 +227,38 @@ function getLandingPageHTML() {
               </div>
             </div>
           </div>
+          
+          <!-- Mobile Card Layout -->
+          <div class="comparison-cards flex md:hidden flex-col gap-6">
+            <div class="comparison-card">
+              <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-fuchsia-700">Capability</h3>
+              <p class="text-sm font-normal font-['DotGothic16'] text-neutral-500 mb-4">Breadth of on-chain tasks AI can perform arbitrarily securely</p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Any contracts on supported chains</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Zero bespoke integration</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Context, states, prompt engineering</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-fuchsia-700 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Custom-built framework for performance</span></li>
+              </ul>
+            </div>
+            
+            <div class="comparison-card">
+              <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-neutral-500">Automacy</h3>
+              <p class="text-sm font-normal font-['DotGothic16'] text-neutral-500 mb-4 text-wrap">Depth and continuity of an agent's ability to perform a task asynchronously and independently</p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Manage assets in trusted environment</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Bespoke to certain protocols</span></li>
+              </ul>
+            </div>
+            
+            <div class="comparison-card">
+              <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-neutral-500">Collaboration</h3>
+              <p class="text-sm font-normal font-['DotGothic16'] text-neutral-500 mb-4 text-wrap">Degree of agent coordination, specialization, and emergent behavior in multi-agent swarm</p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Economic incentives</span></li>
+                <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">No guarantee in completing user intent</span></li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div id="blog" class="w-full max-w-[1500px] pt-20 pb-28 border-t border-gray-200 flex flex-col justify-start items-start gap-20">
           <div class="self-stretch inline-flex justify-between items-start">
@@ -214,7 +267,7 @@ function getLandingPageHTML() {
               <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Blog ↗</div>
             </button>
           </div>
-          <div class="scroll-reveal scroll-reveal-delay-3 self-stretch inline-flex justify-center items-start gap-5">
+          <div class="scroll-reveal scroll-reveal-delay-3 self-stretch inline-flex justify-center items-start gap-5 blog-columns flex-col md:flex-row">
             <div class="flex-1 pl-10 min-w-60 pr-7 pt-14 pb-5 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-14">
               <div class="self-stretch justify-start text-neutral-500 text-7xl font-normal font-['DM_Sans'] leading-[80px]">01</div>
               <div class="self-stretch pl-5 flex flex-col justify-start items-start gap-5">
@@ -386,9 +439,28 @@ function navigateToHome() {
   window.scrollTo(0, 0);
 }
 
+// Mobile menu functions
+function toggleMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.querySelector('.hamburger-icon');
+  
+  menu.classList.toggle('active');
+  icon.classList.toggle('active');
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const icon = document.querySelector('.hamburger-icon');
+  
+  menu.classList.remove('active');
+  icon.classList.remove('active');
+}
+
 // Make functions globally accessible
 window.navigateToBlog = navigateToBlog;
 window.navigateToHome = navigateToHome;
+window.toggleMobileMenu = toggleMobileMenu;
+window.closeMobileMenu = closeMobileMenu;
 
 // Initialize landing page functionality
 function initializeLandingPage() {
