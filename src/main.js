@@ -134,7 +134,7 @@ function getLandingPageHTML() {
                 <div class="flex-1 pr-10 justify-start text-black text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight mt-1">Execute: previous context is trimmed and fed into LLM. Agent generates scripts that fulfill user intent. Simulates the scripts for security and land the transactions.</div>
               </div>
             </div>
-            <div class="slide-in-right slide-in-right-delay-4 self-stretch px-11 justify-start text-neutral-500 font-normal text-sm font-['DotGothic16'] tracking-wide">Think of Manus ↗ or OpenAI's Agent mode ↗ for on-chain tasks.</div>
+            <div class="slide-in-right slide-in-right-delay-4 self-stretch px-11 justify-start text-neutral-500 font-normal text-sm font-['DotGothic16'] tracking-wide">Think of <a href="https://manus.im/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Manus ↗</a> or <a href="https://openai.com/index/introducing-chatgpt-agent/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">OpenAI's Agent mode ↗</a> for on-chain tasks.</div>
           </div>
           <div class="slide-in-right slide-in-right-delay-4 w-[519px] max-w-[1600px] inline-flex flex-col justify-start items-end">
             <div class="w-[519px] h-[620px] overflow-hidden rounded-[30px]">
@@ -231,7 +231,7 @@ function getLandingPageHTML() {
           <!-- Mobile Card Layout -->
           <div class="comparison-cards flex md:hidden flex-col gap-6">
             <div class="comparison-card">
-              <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-fuchsia-700">Capability</h3>
+              <h3 class="text-xl font-semibold font-['Bauhaus_Chez_Display_2.0'] mb-4 text-neutral-500">Capability</h3>
               <p class="text-sm font-normal font-['DotGothic16'] text-neutral-500 mb-4">Breadth of on-chain tasks AI can perform arbitrarily securely</p>
               <ul class="space-y-3">
                 <li class="flex items-start gap-3"><div class="w-2 h-2 bg-neutral-500 rounded-full mt-2 flex-shrink-0"></div><span class="text-sm font-light font-['Bauhaus_Chez_Display_2.0'] text-wrap">Any contracts on supported chains</span></li>
@@ -272,26 +272,26 @@ function getLandingPageHTML() {
               <div class="self-stretch justify-start text-neutral-500 text-7xl font-normal font-['DM_Sans'] leading-[80px]">01</div>
               <div class="self-stretch pl-5 flex flex-col justify-start items-start gap-5">
                 <div class="self-stretch justify-start text-black text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">States</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">12-Factor Agents - Principles for building reliable LLM applications ↗</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Building Effective Agents ↗</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Chip Huyan's Agent ↗</div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://github.com/humanlayer/12-factor-agents" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">12-Factor Agents - Principles for building reliable LLM applications ↗</a></div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://www.anthropic.com/engineering/building-effective-agents" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Building Effective Agents ↗</a></div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://huyenchip.com/2025/01/07/agents.html" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Chip Huyan's Agent ↗</a></div>
               </div>
             </div>
             <div class="flex-1 min-w-60 pr-7 pt-14 pb-5 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-14">
               <div class="self-stretch justify-start text-neutral-500 text-7xl font-normal font-['DM_Sans'] leading-[80px]">02</div>
               <div class="self-stretch pl-5 flex flex-col justify-start items-start gap-5">
                 <div class="self-stretch justify-start text-black text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Context</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">LLM Reasoning ↗</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">The Ultimate Guide to Prompting ↗</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Language Agents: From Reasoning to Acting ↗</div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://dennyzhou.github.io/LLM-Reasoning-Stanford-CS-25.pdf" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">LLM Reasoning ↗</a></div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://arxiv.org/pdf/2205.11916" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">The Ultimate Guide to Prompting ↗</a></div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://www.latent.space/p/shunyu" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Language Agents: From Reasoning to Acting ↗</a></div>
               </div>
             </div>
             <div class="flex-1 min-w-60 pr-7 pt-14 pb-5 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-14">
               <div class="self-stretch justify-start text-neutral-500 text-7xl font-normal font-['DM_Sans'] leading-[80px]">03</div>
               <div class="self-stretch pl-5 flex flex-col justify-start items-start gap-5">
                 <div class="self-stretch justify-start text-black text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">Evals</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">LLM-as-a-judge ↗</div>
-                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide">Your AI Product Needs Evals ↗</div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://hamel.dev/blog/posts/llm-judge/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">LLM-as-a-judge ↗</a></div>
+                <div class="self-stretch justify-start text-neutral-500 text-sm font-normal font-['DotGothic16'] tracking-wide"><a href="https://hamel.dev/blog/posts/evals/index.html" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Your AI Product Needs Evals ↗</a></div>
               </div>
             </div>
           </div>
