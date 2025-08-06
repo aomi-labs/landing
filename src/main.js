@@ -58,7 +58,7 @@ function getLandingPageHTML() {
         <div class="scroll-reveal scroll-reveal-delay-1 self-stretch text-center justify-start text-black text-[160px] font-black font-['Bauhaus_Chez_Display_2.0'] leading-[136px] mt-7">UX reinvention.</div>
         <div data-breakpoint="Desktop" class="scroll-reveal scroll-reveal-delay-2 self-stretch h-96 relative bg-gradient-to-l from-blue-400/50 to-fuchsia-700/50 rounded-[30px]">
           <div class="w-[927px] h-[644px] left-1/2 -translate-x-1/2 top-[-141px] absolute bg-black rounded-3xl shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.10)] border-l-2 border-r-2 border-t-2 border-white/50 overflow-hidden">
-            <img class="w-[889.74px] h-[505.44px] left-[18.63px] top-[18.50px] absolute rounded-2xl" src="/assets/images/kk-1.png" />
+            <img class="w-[889.74px] h-[505.44px] left-[18.63px] top-[18.50px] absolute rounded-2xl" src="/assets/images/kk-1.jpg" />
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@ function getLandingPageHTML() {
           </div>
           <div class="slide-in-right slide-in-right-delay-4 w-[519px] max-w-[1600px] inline-flex flex-col justify-start items-end">
             <div class="w-[519px] h-[620px] overflow-hidden rounded-[30px]">
-              <img class="w-full h-full object-cover" src="/assets/images/kk-3.jpg" />
+              <img class="w-full h-full object-cover" src="/assets/images/kk-3.webp" />
             </div>
           </div>
         </div>
