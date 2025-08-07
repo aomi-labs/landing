@@ -25,29 +25,16 @@ function showBlogPage() {
 
 function getLandingPageHTML() {
   return `
-    <!-- Mobile Menu Overlay -->
-    <div id="mobile-menu" class="hamburger-menu md:hidden">
-      <a href="#about" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">About</a>
-      <a href="#mission" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Mission</a>
-      <a href="#blog" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Blog</a>
-      <a href="#contact" onclick="closeMobileMenu()" class="text-black text-2xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Contact</a>
-      <a href="https://github.com/aomi-labs" target="_blank" rel="noopener noreferrer" class="px-6 py-4 bg-fuchsia-700 rounded-full text-white text-lg font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:bg-fuchsia-800 transition-colors">Github ↗</a>
-    </div>
     
     <div class="w-full min-h-screen px-10 pb-5 relative bg-white flex flex-col justify-start items-center overflow-hidden">
       <div data-breakpoint="Desktop" class="self-stretch flex flex-col justify-start items-center">
         <!-- Mobile Header -->
         <div class="mobile-nav w-full h-20 max-w-[1500px] pt-5 pb-8 flex justify-between items-center md:hidden">
           <img src="/assets/images/aomi-logo.svg" alt="Aomi" class="h-8 w-auto" />
-          <div class="hamburger-icon" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
         
         <!-- Desktop Header -->
-        <div class="desktop-nav w-full h-36 max-w-[1500px] pt-5 pb-20 hidden md:inline-flex justify-between items-center">
+        <div class="desktop-nav w-full h-36 max-w-[1500px] pt-5 pb-20 flex justify-between items-center">
           <img src="/assets/images/aomi-logo.svg" alt="Aomi" class="h-15 w-auto" />
           <a href="https://github.com/aomi-labs" target="_blank" rel="noopener noreferrer" data-state="Default" class="px-5 py-3.5 bg-fuchsia-700 rounded-full flex justify-center items-center gap-0.5 hover:bg-fuchsia-800 transition-colors">
             <div class="text-center justify-start text-white text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight">Github ↗</div>
@@ -316,7 +303,7 @@ function getLandingPageHTML() {
           <div class="justify-center text-lime-800 text-1.3xl font-light font-['Bauhaus_Chez_Display_2.0'] leading-none">All Rights Reserved</div>
         </div>
       </div>
-      <div class="px-6 py-5 top-[16px] absolute bg-white/40 rounded-[100px] backdrop-blur-lg inline-flex justify-start items-center gap-7 overflow-hidden">
+      <div class="floating-nav fixed top-4 left-1/2 transform -translate-x-1/2 px-6 py-5 bg-white/40 rounded-[100px] backdrop-blur-lg inline-flex justify-start items-center gap-7 overflow-hidden z-50">
         <a href="#about" class="text-center justify-start text-black text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">About</a>
         <a href="#mission" class="text-center justify-start text-black text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Mission</a>
         <a href="#blog" class="text-center justify-start text-black text-sm font-light font-['Bauhaus_Chez_Display_2.0'] leading-tight hover:text-fuchsia-700 transition-colors">Blog</a>
@@ -439,28 +426,10 @@ function navigateToHome() {
   window.scrollTo(0, 0);
 }
 
-// Mobile menu functions
-function toggleMobileMenu() {
-  const menu = document.getElementById('mobile-menu');
-  const icon = document.querySelector('.hamburger-icon');
-  
-  menu.classList.toggle('active');
-  icon.classList.toggle('active');
-}
-
-function closeMobileMenu() {
-  const menu = document.getElementById('mobile-menu');
-  const icon = document.querySelector('.hamburger-icon');
-  
-  menu.classList.remove('active');
-  icon.classList.remove('active');
-}
 
 // Make functions globally accessible
 window.navigateToBlog = navigateToBlog;
 window.navigateToHome = navigateToHome;
-window.toggleMobileMenu = toggleMobileMenu;
-window.closeMobileMenu = closeMobileMenu;
 
 // Initialize landing page functionality
 function initializeLandingPage() {
