@@ -96,6 +96,20 @@
     max-width: 100% !important;
   }
   
+  /* Mobile iPad and image responsive adjustments */
+  .ipad-container {
+    width: 85vw !important;
+    top: -60px !important;
+  }
+  
+  .responsive-image {
+    max-width: 100% !important;
+  }
+  
+  .responsive-image-container {
+    max-width: 100% !important;
+  }
+  
   /* Mobile flex layout fixes */
   .gap-60 {
     gap: 3rem !important;
@@ -188,6 +202,132 @@
 .scroll-reveal.animate-in {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* iPad container responsive styles */
+.ipad-container {
+  width: 90vw;
+  max-width: 927px;
+  height: auto;
+  aspect-ratio: 927 / 644;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -141px;
+  background: black;
+  border-radius: 24px;
+  box-shadow: 0px -4px 20px 0px rgba(0,0,0,0.10);
+  border-left: 2px solid rgba(255,255,255,0.5);
+  border-right: 2px solid rgba(255,255,255,0.5);
+  border-top: 2px solid rgba(255,255,255,0.5);
+  overflow: hidden;
+}
+
+.ipad-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments for iPad container */
+@media (max-width: 768px) {
+  .ipad-container {
+    width: 85vw;
+    top: -80px;
+  }
+  
+  .ipad-screen {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .ipad-container {
+    width: 88vw;
+    top: -100px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .ipad-container {
+    width: 80vw;
+    max-width: 927px;
+  }
+}
+
+/* Responsive panel styles */
+.responsive-panel {
+  min-height: 24rem;
+  height: auto;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .responsive-panel {
+    min-height: 20rem;
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .responsive-panel {
+    min-height: 22rem;
+    padding: 1.75rem 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  .responsive-panel {
+    min-height: 24rem;
+    padding: 2rem 0;
+  }
+}
+
+/* Responsive image styles */
+.responsive-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  aspect-ratio: 1200 / 620;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.responsive-image-container {
+  width: 100%;
+  max-width: 519px;
+  height: auto;
+  aspect-ratio: 519 / 620;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 100%;
+    aspect-ratio: 1200 / 620;
+  }
+  
+  .responsive-image-container {
+    max-width: 100%;
+    aspect-ratio: 519 / 620;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .responsive-image {
+    max-width: 90%;
+  }
+  
+  .responsive-image-container {
+    max-width: 90%;
+  }
 }
 
 /* Staggered animation for multiple elements */

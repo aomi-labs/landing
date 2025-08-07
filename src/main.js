@@ -43,9 +43,9 @@ function getLandingPageHTML() {
       </div>
       <div class="w-full max-w-[1500px] flex flex-col justify-start items-start gap-60 overflow-hidden">
         <div class="scroll-reveal scroll-reveal-delay-1 self-stretch text-center justify-start text-black text-[160px] font-black font-['Bauhaus_Chez_Display_2.0'] leading-[136px] mt-7">UX reinvention.</div>
-        <div data-breakpoint="Desktop" class="scroll-reveal scroll-reveal-delay-2 self-stretch h-96 relative bg-gradient-to-l from-blue-400/50 to-fuchsia-700/50 rounded-[30px]">
-          <div class="w-[927px] h-[644px] left-1/2 -translate-x-1/2 top-[-141px] absolute bg-black rounded-3xl shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.10)] border-l-2 border-r-2 border-t-2 border-white/50 overflow-hidden">
-            <img class="w-[889.74px] h-[505.44px] left-[18.63px] top-[18.50px] absolute rounded-2xl" src="/assets/images/kk-1.jpg" />
+        <div data-breakpoint="Desktop" class="scroll-reveal scroll-reveal-delay-2 self-stretch responsive-panel relative bg-gradient-to-l from-blue-400/50 to-fuchsia-700/50 rounded-[30px]">
+          <div class="ipad-container w-full max-w-[927px] h-auto aspect-[927/644] left-1/2 -translate-x-1/2 top-[-141px] absolute bg-black rounded-3xl shadow-[0px_-4px_20px_0px_rgba(0,0,0,0.10)] border-l-2 border-r-2 border-t-2 border-white/50 overflow-hidden">
+            <img class="ipad-screen w-full h-full object-cover rounded-2xl" src="/assets/images/kk-1.jpg" />
           </div>
         </div>
       </div>
@@ -95,7 +95,7 @@ function getLandingPageHTML() {
               </div>
             </div>
           </div>
-          <img class="scroll-reveal scroll-reveal-delay-1 w-[1200px] h-[620px] relative rounded-[30px] object-cover mx-auto" src="/assets/images/kk-2.png" />
+          <img class="scroll-reveal scroll-reveal-delay-1 responsive-image w-full max-w-[1200px] h-auto aspect-[1200/620] object-cover mx-auto rounded-[30px]" src="/assets/images/kk-2.png" />
         </div>
         <div class="w-full max-w-[1500px] pb-28 inline-flex justify-start items-start gap-5">
           <div class="flex-1 pt-14 pb-20 border-t border-gray-200 inline-flex flex-col justify-start items-start gap-10">
@@ -124,7 +124,7 @@ function getLandingPageHTML() {
             <div class="slide-in-right slide-in-right-delay-4 self-stretch px-11 justify-start text-neutral-500 font-normal text-sm font-['DotGothic16'] tracking-wide">Think of <a href="https://manus.im/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">Manus ↗</a> or <a href="https://openai.com/index/introducing-chatgpt-agent/" target="_blank" rel="noopener noreferrer" class="text-neutral-500 hover:text-fuchsia-700 transition-colors">OpenAI's Agent mode ↗</a> for on-chain tasks.</div>
           </div>
           <div class="slide-in-right slide-in-right-delay-4 w-[519px] max-w-[1600px] inline-flex flex-col justify-start items-end">
-            <div class="w-[519px] h-[620px] overflow-hidden rounded-[30px]">
+            <div class="responsive-image-container w-full max-w-[519px] h-auto aspect-[519/620] overflow-hidden rounded-[30px]">
               <img class="w-full h-full object-cover" src="/assets/images/kk-3.webp" />
             </div>
           </div>
@@ -284,8 +284,8 @@ function getLandingPageHTML() {
           </div>
         </div>
         <div class="scroll-reveal scroll-reveal-delay-1 self-stretch pb-10 flex flex-col justify-start items-center gap-2.5">
-          <div class="w-full h-[664.29px] max-w-[1500px] max-h-[830.36px] rounded-[30px] inline-flex justify-center items-center gap-2.5 overflow-hidden">
-            <img class="w-[1200px] h-[664px] object-cover rounded-[30px]" src="/assets/images/kk-4.png" />
+          <div class="responsive-image-container w-full max-w-[1200px] h-auto aspect-[1200/664] rounded-[30px] inline-flex justify-center items-center gap-2.5 overflow-hidden">
+            <img class="w-full h-full object-cover rounded-[30px]" src="/assets/images/kk-4.png" />
           </div>
         </div>
         <div class="w-full max-w-[1500px] px-72 py-28 border-t-[0.50px] border-gray-200 flex flex-col justify-start items-center gap-10">
@@ -447,6 +447,21 @@ function initializeLandingPage() {
 
   document.querySelectorAll('.scroll-reveal, .slide-in-right').forEach(el => {
     observer.observe(el);
+  });
+  
+  // Handle window resize for responsive elements
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      // Trigger a reflow to ensure responsive elements update properly
+      const ipadContainer = document.querySelector('.ipad-container');
+      if (ipadContainer) {
+        ipadContainer.style.display = 'none';
+        ipadContainer.offsetHeight; // Force reflow
+        ipadContainer.style.display = '';
+      }
+    }, 100);
   });
 }
 
